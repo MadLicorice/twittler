@@ -3,25 +3,44 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
   </head>
   <body>
-    <script>
+      <div class="wrapper">
+    <aside>
+      <div class="avatar-container">
+        <div class="avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <h3 id="handle">@me</h3>
+      </div>
+      <button id="new-tweets">Show All Tweets</button>
+    </aside>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
+    <main id="main">
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
+<!--      <div class="tweet-container">
+        <div class="tweet-col-left">
+          <div class="avatar-container">
+            <div class="avatar intweet">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
 
-      });
+        <div class="tweet-col-right">
+          <p class="tweet-user">@sharksforcheap -<span> Jan 1 2018</span></p>
+          <p class="tweet">tweeeeeeeet</p>
+        </div>
+      </div> -->
 
-    </script>
+    </main>
+  </div>
+
   </body>
 </html>
