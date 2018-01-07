@@ -22,13 +22,13 @@ $(document).ready(function(){
 
       var $tweetColRight = $('<div class="tweet-col-right">');
       $tweetColRight.appendTo($tweetContainer);
-      var $tweetUser = $('<p id="tweet-user">');
+      var $tweetUser = $('<p class="tweet-user">');
       $tweetUser.text('@' + tweet.user);
       $tweetUser.appendTo($tweetColRight);
       var $tweetMessage = $('<p class="tweet"></p>');
       $tweetMessage.text(tweet.message);
       $tweetMessage.appendTo($tweetColRight);
-      var $tweetDate = $('<p id="date"></p>');
+      var $tweetDate = $('<p class="date"></p>');
       $tweetDate.text(tweet.created_at);
       $tweetDate.appendTo($tweetColRight);
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
     }
     
     function anyUsersTweets () {
-      $('#tweet-user').on('click', function(){
+      $('.tweet-user').on('click', function(){
         var person = $(this).text().slice(1);
         console.log(person);
         $main.html('');
@@ -60,13 +60,13 @@ $(document).ready(function(){
 
           var $tweetColRight = $('<div class="tweet-col-right">');
           $tweetColRight.appendTo($tweetContainer);
-          var $tweetUser = $('<p id="tweet-user">');
+          var $tweetUser = $('<p class="tweet-user">');
           $tweetUser.text('@' + tweet.user);
           $tweetUser.appendTo($tweetColRight);
           var $tweetMessage = $('<p class="tweet"></p>');
           $tweetMessage.text(tweet.message);
           $tweetMessage.appendTo($tweetColRight);
-          var $tweetDate = $('<p id="date"></p>');
+          var $tweetDate = $('<p class="date"></p>');
           $tweetDate.text(tweet.created_at);
           $tweetDate.appendTo($tweetColRight);
 

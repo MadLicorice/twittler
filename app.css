@@ -165,7 +165,7 @@ button {
 	font-size: 16px;
 }
 
-.tweet, #tweet-user {
+.tweet, .tweet-user {
 	font-family: "Helvetica";
 	font-size: 14px;
 }
@@ -182,14 +182,14 @@ button {
 	margin: 10px;
 }
 
-#tweet-user {
+.tweet-user {
 	font-weight: bold;
 	cursor: pointer;
 	color: skyblue;
 	margin: 4px;
 }
 
-#date {
+.date {
 	font-family: "Helvetica";
 	font-size: 12px;
 	margin: 4px;
